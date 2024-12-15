@@ -1,5 +1,3 @@
-import NextAuth from "next-auth";
-
 export type ExtendedUser = DefaultSession["user"] & {
   role: UserRole;
   isTwoFactorEnabled: boolean;
