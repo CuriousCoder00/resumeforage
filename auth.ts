@@ -11,11 +11,11 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
         signIn: "/auth/login",
     },
     events: {
-        async linkAccount({ user }) {
-            await db.user.update({
-                where: { id: user.id },
-            });
-        },
+        // async linkAccount({ user }) {
+        //     await db.user.update({
+        //         where: { id: user.id },
+        //     });
+        // },
     },
     callbacks: {
         async signIn({ user, account }) {
