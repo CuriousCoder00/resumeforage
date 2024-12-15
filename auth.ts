@@ -1,4 +1,4 @@
-import NextAuth, { User as NextAuthUser } from "next-auth";
+import NextAuth from "next-auth";
 import { PrismaAdapter } from "@auth/prisma-adapter";
 
 import { db } from "@/lib/db";
@@ -14,9 +14,6 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
         async linkAccount({ user }) {
             await db.user.update({
                 where: { id: user.id },
-                data: {
-                    emailVerified: new Date(),
-                },
             });
         },
     },
