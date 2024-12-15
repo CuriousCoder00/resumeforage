@@ -1,6 +1,8 @@
 import { MoveRight } from "lucide-react";
 import { Button } from "../ui/button";
 import { BsStars } from "react-icons/bs";
+import { BackgroundBeams } from "../ui/background-beams";
+import Link from "next/link";
 
 export const Hero = () => {
   const handleScroll = () => {
@@ -10,8 +12,8 @@ export const Hero = () => {
     }
   };
   return (
-    <div className="w-full">
-      <div className="container mx-auto">
+    <div className="w-full relative bg-gradient-to-b dark:to-black dark:from-neutral-900 from-neutral-300 to-white px-4">
+      <div className="container mx-auto relative z-10">
         <div className="flex gap-8 py-20 lg:py-40 items-center justify-center flex-col">
           <div>
             <Button variant="secondary" size="sm" className="gap-4">
@@ -37,7 +39,9 @@ export const Hero = () => {
               Learn How It Works
             </Button>
             <Button size="lg" className="gap-4">
-              Try Resume Forage for Free <MoveRight className="w-4 h-4" />
+              <Link className="flex gap-4 items-center justify-start" href="/auth/login">
+                Try Resume Forage for Free <MoveRight className="w-4 h-4" />
+              </Link>
             </Button>
           </div>
           <p className="flex items-center justify-center text-muted-foreground text-sm max-w-2xl text-center gap-2">
@@ -46,6 +50,7 @@ export const Hero = () => {
           </p>
         </div>
       </div>
+      <BackgroundBeams />
     </div>
   );
 };

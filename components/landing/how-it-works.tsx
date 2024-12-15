@@ -1,8 +1,8 @@
 export const HowItWorks = () => (
-  <section id="how-it-works" className="w-full py-20 lg:py-40">
+  <section id="how-it-works" className="w-full py-20 lg:py-40 sm:px-12 px-4 max-w-screen-xl">
     <div className="container mx-auto">
       <div className="grid grid-cols-1 lg:grid-cols-2 justify-end items-end  gap-10">
-        <div className="flex gap-4 flex-col items-start">
+        <div className="flex gap-4 flex-col items-start justify-start h-full">
           <div className="flex gap-2 flex-col">
             <h2 className="text-xl md:text-3xl lg:text-5xl tracking-tighter lg:max-w-xl font-regular text-left">
               How It Works?

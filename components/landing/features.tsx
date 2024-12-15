@@ -3,7 +3,7 @@ import { Badge } from "@/components/ui/badge";
 import { features } from "@/lib/data/features";
 
 export const Feature = () => (
-  <div className="w-full py-20 lg:py-40">
+  <div className="w-full py-20 lg:py-40 sm:px-12 px-4 max-w-screen-xl">
     <div className="flex gap-4 py-20 lg:py-40 flex-col mx-auto w-full">
       <div className="flex flex-col mx-auto gap-3">
         <div className="flex gap-2 flex-col items-start">

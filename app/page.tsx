@@ -5,7 +5,7 @@ import { HowItWorks } from "@/components/landing/how-it-works";
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center max-w-screen sm:px-20 px-4">
+    <div className="flex flex-col items-center max-w-screen">
       <Hero />
       <HowItWorks />
       <Feature />
